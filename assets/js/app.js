@@ -6,8 +6,7 @@ $(function () {
     $('#feed').html("");
     // Make ajax call
     var root = '/news_mock.json';
-    // var root = 'https://localhost:8000/posts/';
-    // var root = 'https://localhost:8000/posts/1';
+
     $.ajax({
       url: root,
       method: 'GET'
