@@ -48,6 +48,6 @@ $(function () {
 function showInfo(id) {
   $('.extra-info').addClass('hidden');
   var target = $('[data-info="'+id+'"]');
-  target.removeClass('hidden').fadeIn(1000);
+  target.removeClass('hidden').slideDown('slow');
   return false;
 };
