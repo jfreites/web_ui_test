@@ -12,6 +12,7 @@ $(function () {
       method: 'GET'
     }).then(function(data) {
       // prepare response
+      var data = $.parseJSON(data);
       $.each(data, function (index, option) {
         var row = '<div class="media"> \
                     <div class="media-left media-middle"> \
