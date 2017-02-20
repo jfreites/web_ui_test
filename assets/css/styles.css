@@ -24,6 +24,18 @@ h3 {
   padding-top: 20px;
   min-height: 1000px;
 }
+#loading {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  background: transparent url('/assets/images/ajax-loader.gif') no-repeat center center;
+}
 .icon-bar {
     display: block;
     width: 22px;
@@ -34,6 +46,9 @@ h3 {
 .media {
   background-color: #fff;
   padding: 10px;
+}
+.media-object {
+  border: 1px solid #C0C0C0;
 }
 .extra-info {
   margin-top: 5px;

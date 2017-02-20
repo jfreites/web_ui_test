@@ -1,5 +1,14 @@
 $(function () {
 
+  var $loading = $('#loading').hide();
+  $(document)
+    .ajaxStart(function () {
+      $loading.show();
+    })
+    .ajaxStop(function () {
+      $loading.hide();
+    });
+
   $('#load').on('click', function (e) {
     e.preventDefault();
     // clear section#feed
@@ -17,7 +26,7 @@ $(function () {
         var row = '<div class="media"> \
                     <div class="media-left media-middle"> \
                       <a href="#" onclick="showInfo('+index+')"> \
-                        <img class="media-object img-circle" src="'+option.thumb+'"> \
+                        <img class="media-object img-circle" src="'+option.thumb+'" width="100" height="100"> \
                       </a> \
                     </div> \
                     <div class="media-body"> \
